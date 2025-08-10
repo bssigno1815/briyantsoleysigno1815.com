@@ -1,0 +1,142 @@
+import Head from "next/head";
+
+export default function Store3() {
+  // ---- Catalog (edit here) ----
+  const products = [
+    {
+      name: "Mayo",
+      price: 25,
+      img: "/mayo.jpg",
+      colors: ["Nwa", "Abriko fonse"],
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      sku: "TSHIRT-BSS",
+    },
+    {
+      name: "Tchatcha",
+      price: 15,
+      img: "/tchatcha.jpg",
+      colors: ["Nwa", "Abriko fonse"],
+      sku: "TCHAT-BSS",
+    },
+    {
+      name: "Braslè",
+      price: 5,
+      img: "/brasle.jpg",
+      colors: ["Nwa", "Abriko fonse"],
+      sku: "BRACE-BSS",
+    },
+    {
+      name: "Godé pou Chalè",
+      price: 10,
+      img: "/gode.jpg",
+      colors: ["Nwa", "Abriko fonse"],
+      sku: "MUG-BSS",
+    },
+    {
+      name: "Kèpi",
+      price: 15,
+      img: "/kepi.jpg",
+      colors: ["Nwa", "Abriko fonse"],
+      sizes: ["One Size"],
+      sku: "CAP-BSS",
+    },
+  ];
+
+  const waMessage = (p) =>
+    encodeURIComponent(
+      `Bonjou BSS! Mwen vle achte ${p.name} — $${p.price}.
+Koulè: (${p.colors?.join(" / ") || "—"})
+Gwosè: (${p.sizes?.join(" / ") || "—"})
+SKU: ${p.sku}`
+    );
+
+  return (
+    <>
+      <Head>
+        <title>BSS Store — Ofisyèl</title>
+        <meta name="description" content="BSS Store: Mayo, Tchatcha, Braslè, Godé, Kèpi nan koulè Nwa & Abriko fonse." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="BSS Store — Ofisyèl" />
+        <meta property="og:description" content="Achte atik BSS yo dirèk sou WhatsApp." />
+      </Head>
+
+      <header className="top">
+        <div className="brand">BSS Store</div>
+        <nav className="nav">
+          <a href="/" className="link">Akèy</a>
+          <a href="/store3" className="link active">Boutik</a>
+        </nav>
+      </header>
+
+      <main className="wrap">
+        <h1 className="title">Pwodwi Ofisyèl</h1>
+        <p className="subtitle">Tout koulè yo: <b>Abriko fonse</b> & <b>Nwa</b></p>
+
+        <section className="grid">
+          {products.map((p) => (
+            <article key={p.sku} className="card">
+              <div className="thumb">
+                <img src={p.img} alt={p.name} loading="lazy" />
+                <span className="price">${p.price}</span>
+              </div>
+
+              <h3 className="name">{p.name}</h3>
+
+              {p.colors?.length ? (
+                <div className="row">
+                  {p.colors.map((c) => (
+                    <span key={c} className="chip">{c}</span>
+                  ))}
+                </div>
+              ) : null}
+
+              {p.sizes?.length ? (
+                <div className="row">
+                  {p.sizes.map((s) => (
+                    <span key={s} className="chip chip--light">{s}</span>
+                  ))}
+                </div>
+              ) : null}
+
+              <a
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://wa.me/13175381150?text=${waMessage(p)}`}
+              >
+                Achte sou WhatsApp
+              </a>
+            </article>
+          ))}
+        </section>
+      </main>
+
+      <footer className="foot">© {new Date().getFullYear()} BSS — Briyant Solèy Signo</footer>
+
+      <style jsx>{`
+        :root { --apricot:#E07A1F; --black:#000; --ink:#111; --paper:#fff; }
+        * { box-sizing: border-box; }
+        body { margin:0; font-family: Arial, sans-serif; color: var(--ink); background: var(--apricot); }
+        .top { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:#000; }
+        .brand { color:var(--apricot); font-weight:900; letter-spacing:.4px; }
+        .nav .link { color:#bbb; margin-left:14px; text-decoration:none; font-weight:700; }
+        .nav .active, .nav .link:hover { color:#fff; }
+        .wrap { padding:22px; }
+        .title { margin:8px 0 0; color:#000; }
+        .subtitle { margin:6px 0 18px; font-weight:600; }
+        .grid { display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+        .card { background:var(--paper); border-radius:14px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,.15); display:flex; flex-direction:column; }
+        .thumb { position:relative; background:#f6f6f6; aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center; }
+        .thumb img { width:100%; height:100%; object-fit:cover; }
+        .price { position:absolute; right:10px; bottom:10px; background:var(--apricot); color:#fff; font-weight:900; padding:6px 10px; border-radius:10px; }
+        .name { margin:12px 12px 4px; font-size:18px; }
+        .row { display:flex; flex-wrap:wrap; gap:8px; padding:0 12px 10px; }
+        .chip { background:#222; color:#fff; padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; }
+        .chip--light { background:#eee; color:#111; }
+        .btn { margin:8px 12px 14px; display:inline-block; text-align:center; background:#25D366; color:#fff; font-weight:900; padding:10px 12px; border-radius:10px; text-decoration:none; }
+        .btn:active { transform: translateY(1px); }
+        .foot { padding:20px; text-align:center; color:#111; font-weight:700; opacity:.8; }
+      `}</style>
+    </>
+  );
+}
