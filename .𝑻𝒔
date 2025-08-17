@@ -1,0 +1,6 @@
+import bssPreset from "./tailwind.bss-preset";
+
+export default {
+  presets: [bssPreset],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+};
