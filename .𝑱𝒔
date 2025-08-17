@@ -1,0 +1,16 @@
+// tailwind.bss-preset.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "rgb(var(--bss-primary) / <alpha-value>)",
+        "primary-600": "rgb(var(--bss-primary-600) / <alpha-value>)",
+        black: "rgb(var(--bss-black) / <alpha-value>)",
+        ink: "rgb(var(--bss-ink) / <alpha-value>)",
+        white: "rgb(var(--bss-white) / <alpha-value>)",
+        card: "rgb(var(--bss-card) / <alpha-value>)",
+        border: "rgb(var(--bss-border) / <alpha-value>)",
+      },
+    },
+  },
+};
