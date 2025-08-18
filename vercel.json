@@ -2,19 +2,19 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.briyantsolaysigno1815.com" }],
+      "has": [{ "type": "host", "value": "www.briyantsoleysigno1815.com" }],
       "destination": "https://briyantsolaysigno1815.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "briyantsolaysigno1815-com.vercel.app" }],
+      "has": [{ "type": "host", "value": "briyantsoleysigno1815-com.vercel.app" }],
       "destination": "https://briyantsolaysigno1815.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "briyantsolaysigno1815-*.vercel.app" }],
+      "has": [{ "type": "host", "value": "briyantsoleysigno1815-*.vercel.app" }],
       "destination": "https://briyantsolaysigno1815.com/:path*",
       "permanent": true
     },
