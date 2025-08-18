@@ -1,1 +1,65 @@
-<link rel="stylesheet" href="style.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos • Briyant Solèy Signo 1815</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="panel p-3">
+      <h1 class="center">Official Videos</h1>
+      <p class="center mt-1 mb-2">Replace the three IDs below with your YouTube IDs.</p>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <div>
+          <div class="tile">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_1"
+              title="YouTube video 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tile-title">Video title #1</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+          <div class="tile">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_2"
+              title="YouTube video 2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tile-title">Video title #2</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div>
+          <div class="tile">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_3"
+              title="YouTube video 3"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tile-title">Video title #3</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="center mt-3">
+      <a class="btn ghost" href="/">← Back to Home</a>
+    </p>
+  </div>
+
+</body>
+</html>
