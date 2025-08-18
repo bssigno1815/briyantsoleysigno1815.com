@@ -12,21 +12,28 @@
     <h1 class="center">Kontakte Nou</h1>
     <p class="center">Tanpri ranpli fòm sa a pou kontakte nou.</p>
 
-    <form class="panel" action="mailto:briyantsigno@gmail.com method="post" enctype="text/plain">
-      <label for="name">Non:</label>
-      <input type="text" id="name" name="name" required>
+    <!-- Contact Form (Formspree) -->
+<form class="panel" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+  <label for="name">Non:</label>
+  <input type="text" id="name" name="name" required>
 
-      <label for="email">Imel:</label>
-      <input type="email" id="email" name="email" required>
+  <label for="email">Imel:</label>
+  <input type="email" id="email" name="_replyto" required>
 
-      <label for="subject">Sijè:</label>
-      <input type="text" id="subject" name="subject">
+  <label for="subject">Sijè:</label>
+  <input type="text" id="subject" name="subject">
 
-      <label for="message">Mesaj:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+  <label for="message">Mesaj:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Voye</button>
-    </form>
-  </div>
-</body>
-</html>
+  <button type="submit">Voye</button>
+</form>
+
+<!-- Direct email option (keeps your Gmail visible) -->
+<p class="center" style="margin-top:16px;">
+  Oswa voye imèl dirèkteman:
+  <a href="mailto:briyantsigno@gmail.com?subject=Kontak%20soti%20nan%20sit%20la">
+    briyantsigno@gmail.com
+  </a>
+</p>
+  
