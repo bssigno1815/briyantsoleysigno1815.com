@@ -1,0 +1,39 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.briyantsolaysigno1815.com" }],
+      "destination": "https://briyantsolaysigno1815.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "briyantsolaysigno1815-com.vercel.app" }],
+      "destination": "https://briyantsolaysigno1815.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "briyantsolaysigno1815-*.vercel.app" }],
+      "destination": "https://briyantsolaysigno1815.com/:path*",
+      "permanent": true
+    },
+    { "source": "/video", "destination": "/video.html", "permanent": true },
+    { "source": "/kontak", "destination": "/Kontak.html", "permanent": true },
+    { "source": "/:path*/", "destination": "/:path*", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "geolocation=(), microphone=(), camera=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none';" }
+      ]
+    }
+  ]
+}
