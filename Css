@@ -1,0 +1,45 @@
+/* Header (transparent over gradient) */
+.nav {
+  max-width: 1100px; margin: 12px auto 0; padding: 10px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px; backdrop-filter: blur(6px);
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; }
+.brand-name { font-weight: 700; letter-spacing: .3px; }
+.links a { color: #fff; opacity: .85; margin-left: 14px; text-decoration: none; }
+.links a:hover { opacity: 1; text-decoration: underline; }
+
+/* Hero */
+.hero {
+  max-width: 900px; margin: 88px auto 0; padding: 24px;
+  text-align: center; background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,.45);
+  backdrop-filter: blur(6px);
+}
+.hero h1 { font-size: clamp(28px, 6vw, 48px); margin: 0 0 10px; }
+.sub { margin: 0 0 22px; opacity: .9; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 12px 18px; border-radius: 12px;
+  font-weight: 700; text-decoration: none; transition: transform .05s ease, opacity .2s;
+}
+.btn:active { transform: translateY(1px); }
+.primary { background: #fff; color: #000; }
+.primary:hover { opacity: .9; }
+.ghost { border: 1px solid rgba(255,255,255,0.6); color: #fff; }
+.ghost:hover { background: rgba(255,255,255,0.08); }
+
+/* Trust pills */
+.trust { margin-top: 22px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.pill { padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.35); }
+
+/* Footer */
+.footer { text-align: center; opacity: .85; margin: 34px 0; }
+
+/* Mobile nav wrap */
+@media (max-width: 720px) {
+  .links { display: none; } /* keep it simple for now */
+}
