@@ -1,134 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Magazin • Briyant Solèy Signo 1815</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="panel p-3">
-      <h1 class="center">Magazin</h1>
-      <p class="center mt-1 mb-2">Ajoute pwodui ou yo ak foto/pri.</p>
-
-      <div class="grid">
-        <!-- Product 1 -->
-        <div class="panel p-2">
-          <img src="public/products/prod-1.jpg" alt="Pwodui 1" class="round" />
-          <h3 class="mt-2">Pwodui #1</h3>
-          <p class="mt-1">$120</p>
-          <div class="mt-2">
-            <a class="btn primary" href="kontak.html?subject=Pwodui%201">Achte / Kontakte</a>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="panel p-2">
-          <img src="public/products/prod-2.jpg" alt="Pwodui 2" class="round" />
-          <h3 class="mt-2">Pwodui #2</h3>
-          <p class="mt-1">$85</p>
-          <div class="mt-2">
-            <a class="btn primary" href="kontak.html?subject=Pwodui%202">Achte / Kontakte</a>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="panel p-2">
-          <img src="public/products/prod-3.jpg" alt="Pwodui 3" class="round" />
-          <h3 class="mt-2">Pwodui #3</h3>
-          <p class="mt-1">$49</p>
-          <div class="mt-2">
-            <a class="btn primary" href="kontak.html?subject=Pwodui%203">Achte / Kontakte</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="center mt-3">
-      <a class="btn ghost" href="/">← Retounen lakay</a>
-    </p>
-  </div>
-</body>
-</html><!-- EMAILS: mete blòk sa a nan header, footer, EPI sou paj Kontakte -->
-<div class="email-list" aria-label="Kontak imèl BSS 1815">
-  <div class="email-item">
-    <a class="email-link" href="mailto:briyantsoleysigno1815@gmail.com" title="Voye imèl bay BSS (prensipal)">
-      <!-- icône mail -->
-      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 .5v.2L12 13l8-6.3v-.2L4 6.5z"/>
-      </svg>
-      <span><b>Prensipal:</b> briyantsoleysigno1815@gmail.com</span>
-    </a>
-    <button class="copy-btn" data-email="briyantsoleysigno1815@gmail.com" aria-label="Kopye imèl prensipal">
-      <!-- icône copy -->
-      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M16 1H4a2 2 0 0 0-2 2v12h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/>
-      </svg>
-      Copy
-    </button>
-  </div>
-
-  <div class="email-item">
-    <a class="email-link" href="mailto:briyantsigno@gmail.com" title="Voye imèl bay BSS (backup)">
-      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 .5v.2L12 13l8-6.3v-.2L4 6.5z"/>
-      </svg>
-      <span><b>Backup:</b> briyantsigno@gmail.com</span>
-    </a>
-    <button class="copy-btn" data-email="briyantsigno@gmail.com" aria-label="Kopye imèl backup">
-      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M16 1H4a2 2 0 0 0-2 2v12h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/>
-      </svg>
-      Copy
-    </button>
-  </div>
-</div>
-
-<!-- Toast notifikasyon pou "Kopye" -->
-<footer>
-  <p>
-    📧 Email: 
-    <a href="mailto:briyantsoleysigno1815@gmail.com">
-      briyantsoleysigno1815@gmail.com
-    </a>
-  </p>
 <!doctype html>
 <html lang="ht">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Briyant Solèy Signo 1815 — Ofisyèl</title>
+  <meta name="description" content="Briyant Solèy Signo 1815 — Toujou brile, toujou kléré. Everything Black & Orange." />
   <style>
     :root{
       --apricot:#F49B1A; /* jòn abriko */
       --black:#0b0b0b;   /* nwa */
       --white:#ffffff;
     }
+    *{box-sizing:border-box}
     html,body{height:100%;margin:0}
     body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--white);
-      background: linear-gradient(180deg, var(--apricot) 0%, #c17510 25%, #463414 55%, var(--black) 100%);
-      display:flex; align-items:center; justify-content:center;
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color:var(--white);
+      background:linear-gradient(180deg,var(--apricot) 0%,#c17510 25%,#463414 55%,var(--black) 100%);
     }
-    .wrap{max-width:900px; width:100%; padding:28px; text-align:center}
-    .logo{width:160px; height:160px; object-fit:contain; margin:0 auto 16px; display:block}
-    h1{margin:0 0 4px; font-size:36px; letter-spacing:.5px}
-    .tag{opacity:.9; margin:0 0 28px}
-    .btns{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+
+    /* Top nav */
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(6px);
+      background:rgba(0,0,0,.35);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav-inner{
+      max-width:1100px; margin:0 auto; padding:10px 16px;
+      display:flex; align-items:center; gap:14px; justify-content:space-between;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px}
+    .brand img{width:36px;height:36px;object-fit:contain}
+    .links{display:flex; gap:10px; flex-wrap:wrap}
+    .links a{
+      color:var(--white); text-decoration:none; border:1px solid #333;
+      padding:8px 12px; border-radius:999px; font-size:14px
+    }
+    .links a:hover{border-color:var(--apricot); color:var(--apricot)}
+
+    /* Sections */
+    section{padding:56px 18px}
+    .wrap{max-width:1100px; margin:0 auto}
+    .hero{
+      display:grid; gap:18px; text-align:center; padding-top:42px;
+    }
+    .hero .logo{width:160px;height:160px;object-fit:contain;margin:0 auto}
+    h1{margin:0; font-size:40px; letter-spacing:.5px}
+    .tag{opacity:.95; margin-top:6px; font-size:18px}
+
+    /* Buttons */
+    .btns{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:16px}
     a.btn{
       background:transparent; color:var(--white); border:1px solid #333;
-      padding:10px 14px; border-radius:999px; text-decoration:none
+      padding:10px 16px; border-radius:999px; text-decoration:none; font-weight:600
     }
     a.btn:hover{border-color:var(--apricot); color:var(--apricot)}
-    .emails{margin-top:22px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+
+    /* About */
+    .about p{line-height:1.7; margin:0 0 12px}
+
+    /* Contact */
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
     .pill{
-      background:#111; border:1px solid #222; border-radius:999px; padding:8px 12px;
-      display:flex; gap:8px; align-items:center; font-size:14px
+      background:#111; border:1px solid #222; border-radius:14px; padding:14px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px
     }
+    .pill a{color:var(--white); text-decoration:none; word-break:break-all}
     .copy{cursor:pointer; border:1px solid #333; border-radius:999px; padding:6px 10px}
     .copy:hover{border-color:var(--apricot); color:var(--apricot)}
+
+    form{margin-top:8px; display:grid; gap:10px}
+    input,textarea{
+      border:1px solid #333; background:#0f0f0f; color:#fff; border-radius:10px; padding:10px
+    }
+    button.submit{
+      background:transparent; color:#fff; border:1px solid #333; border-radius:999px;
+      padding:10px 14px; cursor:pointer; font-weight:600
+    }
+    button.submit:hover{border-color:var(--apricot); color:var(--apricot)}
+
+    footer{
+      text-align:center; padding:26px 16px; opacity:.8; font-size:13px;
+      border-top:1px solid rgba(255,255,255,.08)
+    }
+
+    /* Toast */
     .toast{
       position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(20px);
       background:var(--apricot); color:#000; padding:10px 14px; border-radius:999px;
@@ -136,43 +93,94 @@
       transition:opacity .2s, transform .2s;
     }
     .toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
-    footer{margin-top:28px; opacity:.7; font-size:13px}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <!-- If you have your round logo: place it at /assets/logo.png -->
-    <img src="assets/logo.png" alt="Logo BSS 1815" class="logo" onerror="this.style.display='none'">
-    <h1>Briyant Solèy Signo 1815</h1>
-    <p class="tag">Toujou brile, toujou kléré — **Everything Black & Orange**</p>
 
-    <div class="btns">
-      <a class="btn" href="about.html">Kiyès nou ye</a>
-      <a class="btn" href="contact.html">Kontakte nou</a>
-    </div>
-
-    <!-- Visible, clickable emails -->
-    <div class="emails" aria-label="Kontak BSS">
-      <div class="pill">
-        <a href="mailto:briyantsoleysigno1815@gmail.com">briyantsoleysigno1815@gmail.com</a>
-        <button class="copy" data-email="briyantsoleysigno1815@gmail.com">Copy</button>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo BSS"
+             onerror="this.style.display='none'">
+        <span>BSS 1815</span>
       </div>
-      <div class="pill">
-        <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a>
-        <button class="copy" data-email="briyantsigno@gmail.com">Copy</button>
+      <nav class="links">
+        <a href="#home">Akèy</a>
+        <a href="#about">Kiyès nou ye</a>
+        <a href="#contact">Kontakte</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="wrap hero">
+      <img class="logo" src="assets/logo.png" alt="Logo BSS"
+           onerror="this.style.display='none'">
+      <h1>Briyant Solèy Signo 1815</h1>
+      <p class="tag"><strong>Toujou brile, toujou kléré — Everything Black & Orange.</strong></p>
+      <div class="btns">
+        <a class="btn" href="#about">Kiyès nou ye</a>
+        <a class="btn" href="#contact">Kontakte nou</a>
       </div>
     </div>
+  </section>
 
-    <footer>© 1815—2025 BSS. Jòn abriko & nwa pou tout tan.</footer>
-  </main>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about">
+      <h2>Kiyès nou ye</h2>
+      <p>
+        BSS 1815 se yon mouvman kiltirèl ak kominotè. Koulè ofisyèl: 
+        <em>jòn abriko & nwa</em>. Nou pote enèji, respè, ak inite nan chak aktivite.
+      </p>
+      <p>
+        Misyon nou: klere kote nou ye, sipòte jèn yo, epi fè kominote a mache pi byen.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Kontakte nou</h2>
+
+      <!-- Vizib, klike & Kopye -->
+      <div class="grid" aria-label="Imèl BSS">
+        <div class="pill">
+          <a href="mailto:briyantsoleysigno1815@gmail.com">
+            briyantsoleysigno1815@gmail.com
+          </a>
+          <button class="copy" data-email="briyantsoleysigno1815@gmail.com">Copy</button>
+        </div>
+
+        <div class="pill">
+          <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a>
+          <button class="copy" data-email="briyantsigno@gmail.com">Copy</button>
+        </div>
+      </div>
+
+      <!-- Ti fòm san backend: ouvri app imèl la -->
+      <form action="mailto:briyantsoleysigno1815@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="non" placeholder="Non ou" required>
+        <input type="email" name="imel" placeholder="Imèl ou" required>
+        <textarea name="mesaj" rows="5" placeholder="Mesaj ou"></textarea>
+        <button class="submit" type="submit">Voye mesaj</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>© 1815—2025 BSS • Jòn abriko & nwa pou tout tan.</footer>
 
   <div id="toast" class="toast">Kopye!</div>
   <script>
+    // Copy buttons
     const toast = document.getElementById('toast');
     document.addEventListener('click', async (e)=>{
       const btn = e.target.closest('.copy'); if(!btn) return;
       const email = btn.dataset.email;
-      try { await navigator.clipboard.writeText(email); } 
+      try { await navigator.clipboard.writeText(email); }
       catch(e){
         const ta=document.createElement('textarea'); ta.value=email; document.body.appendChild(ta);
         ta.select(); document.execCommand('copy'); ta.remove();
@@ -182,4 +190,4 @@
     });
   </script>
 </body>
-</html> class="copy-toast" id="copyToast" aria-live="polite" aria-hidden="true">Kopye!</div>
+</html>
