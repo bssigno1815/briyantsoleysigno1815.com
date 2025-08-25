@@ -1,4 +1,68 @@
-<!DOCTYPE html>
+<section class="card">
+  <h2>Lis Admin yo</h2>
+
+  <div class="admin-toolbar">
+    <input id="adminSearch" type="search" placeholder="Rechèch: non, wòl, imèl…" oninput="filterAdmins()">
+    <span id="adminCount" class="muted"></span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="admin-table" id="adminTable" aria-label="Tablo admin">
+      <thead>
+        <tr>
+          <th scope="col">Non</th>
+          <th scope="col">Wòl</th>
+          <th scope="col">Imèl</th>
+          <th scope="col">Telefòn</th>
+          <th scope="col">Estati</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Egzanp done (ranplase ak pa w si ou vle) -->
+        <tr>
+          <td>J. Pierre</td>
+          <td><span class="badge badge--admin badge--sm">Admin</span></td>
+          <td><a href="mailto:jpierre@example.com">jpierre@example.com</a></td>
+          <td><a href="tel:+15095550123">+1 (509) 555-0123</a></td>
+          <td><span class="badge badge--verified badge--sm">Active</span></td>
+        </tr>
+        <tr>
+          <td>M. Louis</td>
+          <td><span class="badge badge--security badge--sm">Sekirite</span></td>
+          <td><a href="mailto:mlouis@example.com">mlouis@example.com</a></td>
+          <td><a href="tel:+12025550199">+1 (202) 555-0199</a></td>
+          <td><span class="badge badge--vendor badge--sm">On-Call</span></td>
+        </tr>
+        <tr>
+          <td>A. René</td>
+          <td><span class="badge badge--admin badge--sm">Admin</span></td>
+          <td><a href="mailto:arene@example.com">arene@example.com</a></td>
+          <td><a href="tel:+15095550155">+1 (509) 555-0155</a></td>
+          <td><span class="badge badge--verified badge--sm">Active</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  function filterAdmins(){
+    const q = (document.getElementById('adminSearch').value || '').toLowerCase();
+    const rows = document.querySelectorAll('#adminTable tbody tr');
+    let visible = 0;
+    rows.forEach(tr => {
+      const text = tr.innerText.toLowerCase();
+      const show = !q || text.includes(q);
+      tr.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    const total = rows.length;
+    document.getElementById('adminCount').textContent =
+      visible === total ? `${total} admin` : `${visible}/${total} admin`;
+  }
+  // inisyalize konptè a
+  filterAdmins();
+</script><!DOCTYPE html>
 <html lang="ht">
 <head>
   <meta charset="UTF-8">
