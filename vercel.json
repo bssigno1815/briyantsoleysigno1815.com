@@ -1,20 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "contact/index.html", "use": "@vercel/static" },
-    { "src": "music/index.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/contact", "dest": "/contact/index.html" },
-    { "src": "/music", "dest": "/music/index.html" }
-  ]
-}
-{
   "redirects": [
-    { "source": "/",        "destination": "/index.html",  "permanent": true },
-    { "source": "/mizik",   "destination": "/mizik.html",  "permanent": true },
-    { "source": "/kontak",  "destination": "/kontak.html", "permanent": true }
+    { "source": "/", "destination": "/index.html", "permanent": true },
+    { "source": "/mizik", "destination": "/mizik.html", "permanent": true },
+    { "source": "/kontak", "destination": "/kontak.html", "permanent": true }
   ]
 }
