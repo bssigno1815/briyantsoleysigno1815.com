@@ -1,26 +1,25 @@
 <!doctype html>
 <html lang="ht">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontak – BSS 1815</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/style.css" rel="stylesheet">
   <style>
-    body{background:#000;color:#f7921e;margin:0;font-family:system-ui,Arial}
+    :root { --bg:#000; --fg:#f7921e; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Arial;background:var(--bg);color:var(--fg)}
+    a{color:var(--fg);text-decoration:none}
     .wrap{max-width:900px;margin:0 auto;padding:32px;min-height:100vh}
-    a{color:#f7921e;text-decoration:none}
     header{display:flex;gap:16px;align-items:center;margin-bottom:24px}
     nav a{margin-right:12px}
-    .logo{font-weight:800;letter-spacing:.5px}
-    label{display:block;margin:12px 0 4px}
-    input,textarea{width:100%;max-width:520px;padding:10px;border:1px solid #f7921e;background:#111;color:#f7921e}
-    button{margin-top:12px;padding:10px 16px;border:1px solid #f7921e;background:#111;color:#f7921e;cursor:pointer}
+    .card{border:1px solid var(--fg);padding:20px}
+    input,textarea{width:100%;padding:10px;margin-top:6px;background:#111;border:1px solid var(--fg);color:var(--fg)}
+    button{margin-top:12px;padding:10px 16px;background:#111;border:1px solid var(--fg);color:var(--fg);cursor:pointer}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="logo">BSS 1815</div>
+      <strong>BSS 1815</strong>
       <nav>
         <a href="/index.html">Akèy</a>
         <a href="/mizik.html">Mizik</a>
@@ -29,112 +28,18 @@
     </header>
 
     <h1>Kontak</h1>
-    <p>Imèl ofisyèl: <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a></p>
-
-    <form>
-      <label>Non</label>
-      <input type="text" placeholder="Non ou">
-      <label>Mesaj</label>
-      <textarea rows="4" placeholder="Ekri mesaj ou..."></textarea>
-      <button type="button">Voye</button>
-    </form>
-
-    <p style="margin-top:20px;"><a href="/index.html">← Retounen lakay</a></p>
-  </div>
-</body>
-</html><!doctype html>
-<html lang="ht">
-<head>
-  <meta charset="utf-8">
-  <title>Kontak – BSS 1815</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/style.css" rel="stylesheet">
-  <style>
-    body{background:#000;color:#f7921e;margin:0;font-family:system-ui,Arial}
-    .wrap{max-width:900px;margin:0 auto;padding:32px;min-height:100vh}
-    a{color:#f7921e;text-decoration:none}
-    header{display:flex;gap:16px;align-items:center;margin-bottom:24px}
-    nav a{margin-right:12px}
-    .logo{font-weight:800;letter-spacing:.5px}
-    label{display:block;margin:12px 0 4px}
-    input,textarea{width:100%;max-width:520px;padding:10px;border:1px solid #f7921e;background:#111;color:#f7921e}
-    button{margin-top:12px;padding:10px 16px;border:1px solid #f7921e;background:#111;color:#f7921e;cursor:pointer}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="logo">BSS 1815</div>
-      <nav>
-        <a href="/index.html">Akèy</a>
-        <a href="/mizik.html">Mizik</a>
-        <a href="/kontak.html">Kontak</a>
-      </nav>
-    </header>
-
-    <h1>Kontak</h1>
-    <p>Imèl ofisyèl: <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a></p>
-
-    <form>
-      <label>Non</label>
-      <input type="text" placeholder="Non ou">
-      <label>Mesaj</label>
-      <textarea rows="4" placeholder="Ekri mesaj ou..."></textarea>
-      <button type="button">Voye</button>
-    </form>
-
-    <p style="margin-top:20px;"><a href="/index.html">← Retounen lakay</a></p>
-  </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="ht">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontak — Briyant Solèy Signo 1815</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Kontak — BSS 1815</h1>
-    <nav>
-      <a href="index.html">Akèy</a>
-      <a href="music.html">Mizik</a>
-      <a href="galery.html">Galeri</a>
-      <a href="video.html">Videyo</a>
-      <a class="active" href="contact.html">Kontak</a>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <section class="card">
-      <h2>Voye yon mesaj</h2>
+    <div class="card">
+      <p>Imèl: <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a></p>
       <form>
-        <label>Non
-          <input type="text" name="name" placeholder="Non ou" required />
-        </label>
-
-        <label>Imèl
-          <input type="email" name="email" placeholder="ou@example.com" required />
-        </label>
-
-        <label>Mesaj
-          <textarea name="message" rows="5" placeholder="Ekri mesaj ou..." required></textarea>
-        </label>
-
-        <button type="submit">Voye</button>
+        <label>Non</label>
+        <input type="text" placeholder="Non ou" />
+        <label>Mesaj</label>
+        <textarea rows="4" placeholder="Ekri mesaj ou..."></textarea>
+        <button type="button">Voye</button>
       </form>
-    </section>
+    </div>
 
-    <section class="card">
-      <h3>Kontak Rapid</h3>
-      <p><strong>Imèl:</strong> info@briyantsoleysigno1815.com</p>
-      <p><strong>Rezo sosyal:</strong> @bss1815</p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Briyant Solèy Signo 1815
-  </footer>
+    <p style="margin-top:20px;"><a href="/index.html">← Retounen lakay</a></p>
+  </div>
 </body>
 </html>
