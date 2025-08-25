@@ -1,7 +1,8 @@
 {
-  "redirects": [
-    { "source": "/", "destination": "/index.html", "permanent": true },
-    { "source": "/mizik", "destination": "/mizik.html", "permanent": true },
-    { "source": "/kontak", "destination": "/kontak.html", "permanent": true }
+  "version": 2,
+  "routes": [
+    { "src": "^/$",        "dest": "/index.html" },
+    { "src": "^/mizik$",   "dest": "/mizik.html" },
+    { "src": "^/kontak$",  "dest": "/kontak.html" }
   ]
 }
