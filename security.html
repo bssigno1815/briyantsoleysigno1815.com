@@ -1,4 +1,43 @@
-<section class="card">
+<!-- 🔔 ADMIN SMS: kole blòk sa a anvan </body> -->
+<button type="button" onclick="sendTest()"
+  style="margin:16px 0;padding:10px 16px;border-radius:10px;border:1px solid #ffb000;background:#ffb000;color:#111;font-weight:700;cursor:pointer">
+  🔔 Voye SMS Test bay Admin
+</button>
+
+<script>
+  // Voye done tranzaksyon bay API Vercel la
+  async function notifyAdmin(data = {}) {
+    try {
+      const res = await fetch('/api/notify-transaction', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: data.amount || 0,
+          customerName: data.customerName || 'Unknown',
+          method: data.method || 'card',
+          txId: data.txId || ('TX-' + Date.now())
+        })
+      });
+
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(json.error || 'Request failed');
+      console.log('Admin notified ✅', json);
+    } catch (err) {
+      console.error('SMS failed:', err);
+      alert('Pa reyisi voye SMS admin. Tcheke Vercel logs.');
+    }
+  }
+
+  // Bouton test pou verifye SMS la rive
+  function sendTest() {
+    notifyAdmin({
+      amount: 100,
+      customerName: 'Test User',
+      method: 'test',
+      txId: 'TEST-' + Math.floor(Math.random() * 1e6)
+    });
+  }
+            </script><section class="card">
   <h2>Sekirite sou Badge Ti Machann yo</h2>
   <p><strong>Ti Machann</strong> yo se poto mitan sistèm nou an. Chak badge gen yon nimewo inik ak enfòmasyon kle ki idantifye machann nan.</p>
   
