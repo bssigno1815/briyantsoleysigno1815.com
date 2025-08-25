@@ -12,3 +12,11 @@
     "dotenv": "^16.4.1"
   }
 }
+{
+  "name": "briyantsoleysigno1815",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "twilio": "^4.23.0"
+  }
+}
