@@ -1,4 +1,65 @@
-<!-- 🔔 ADMIN SMS: kole blòk sa a anvan </body> -->
+<script>
+(function(){
+  const banner = document.getElementById('voiceBanner');
+  if(!banner) return;
+
+  // Ranmase chemen yo depi data-atribit
+  const AUDIO_SRC = banner.dataset.audio || "/assets/audio/istwa-vwa.mp3";
+  const VIDEO_SRC = banner.dataset.video || "/assets/video/istwa-vwa.mp4";
+
+  // Prepare Audio
+  const audio = new Audio(AUDIO_SRC);
+  audio.preload = "auto";
+
+  const playBtn = document.getElementById('voicePlay');
+  const watchBtn = document.getElementById('voiceWatch');
+  const dialog = document.getElementById('videoDialog');
+  const video = document.getElementById('voiceVideo');
+
+  let playing = false;
+  function updatePlayBtn(){
+    playBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    playBtn.textContent = playing ? '⏸︎ Pauze Vwa' : '▶︎ Jwe Vwa';
+  }
+
+  // Tcheke egzistans fichye yo pou pa montre bouton ki pa mache
+  Promise.allSettled([
+    fetch(AUDIO_SRC, { method: 'HEAD' }),
+    fetch(VIDEO_SRC, { method: 'HEAD' })
+  ]).then(([a,v])=>{
+    if(!(a.value && a.value.ok)) playBtn.style.display = 'none';
+    if(!(v.value && v.value.ok)) watchBtn.style.display = 'none';
+  }).catch(()=>{ /* ignòre */ });
+
+  // Bouton Jwe/Pauze vwa
+  playBtn.addEventListener('click', async ()=>{
+    try{
+      if(!playing){
+        await audio.play();
+        playing = true;
+      }else{
+        audio.pause();
+        playing = false;
+      }
+      updatePlayBtn();
+    }catch(e){
+      alert("Navigatè a bloke autoplay. Peze bouton an ankò oswa pèmèt son.");
+    }
+  });
+  audio.addEventListener('ended', ()=>{ playing=false; updatePlayBtn(); });
+
+  // Bouton Gade videyo
+  watchBtn.addEventListener('click', ()=>{
+    video.src = VIDEO_SRC;
+    if(typeof dialog.showModal === 'function'){
+      dialog.showModal();
+    }else{
+      // fallback si <dialog> pa sipòte
+      window.open(VIDEO_SRC, '_blank');
+    }
+  });
+})();
+</script><!-- 🔔 ADMIN SMS: kole blòk sa a anvan </body> -->
 <button type="button" onclick="sendTest()"
   style="margin:16px 0;padding:10px 16px;border-radius:10px;border:1px solid #ffb000;background:#ffb000;color:#111;font-weight:700;cursor:pointer">
   🔔 Voye SMS Test bay Admin
