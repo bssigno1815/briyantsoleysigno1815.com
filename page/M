@@ -1,0 +1,14 @@
+export default function Kontak() {
+  return (
+    <main style={{
+      minHeight: '100vh',
+      background: '#000',
+      color: '#f7921e',
+      padding: 32
+    }}>
+      <h1>Kontak</h1>
+      <p>Imèl: briyantsigno@gmail.com</p>
+      <a href="/">← Retounen</a>
+    </main>
+  );
+}
