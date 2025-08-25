@@ -1,1 +1,56 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paj Sekirite - BSS 1815</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Paj Sekirite</h1>
+  </header>
+
+  <main>
+    <h2>Badges Admin & Sekirite</h2>
+
+    <div class="badge-bar">
+      <!-- Admin -->
+      <span class="badge badge--admin">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z" stroke="currentColor" stroke-width="2"/>
+          <path d="M8.5 12.5l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Admin
+      </span>
+
+      <!-- Verified -->
+      <span class="badge badge--verified">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 6l-11 11L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Verified
+      </span>
+
+      <!-- Machann -->
+      <span class="badge badge--vendor">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 7h18l-2 10H5L3 7zm4-4h10v3H7V3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        Machann
+      </span>
+
+      <!-- Sekirite -->
+      <span class="badge badge--security">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Sekirite
+      </span>
+    </div>
+  </main>
+
+</body>
+</html><link rel="stylesheet" href="style.css">
