@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sekirite — Briyant Solèy Signo 1815</title>
+  <meta name="description" content="Règleman sekirite ak pwoteksyon done sou sit ofisyèl Briyant Solèy Signo 1815." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ti ajou pou bèl prezantasyon si style.css pa kouvri yo */
+    .wrap{max-width:960px;margin:0 auto;padding:24px 16px}
+    .card{background:#111319;border:1px solid #262b36;border-radius:14px;padding:18px;margin:18px 0}
+    h1,h2{margin:0 0 8px}
+    .muted{opacity:.85}
+    .badge{display:inline-block;font-weight:700;border:1px solid #ffb24d;padding:2px 8px;border-radius:999px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    a.btn{display:inline-block;margin-top:8px;border:1px solid #ffb24d;padding:10px 14px;border-radius:10px;text-decoration:none}
+    a.btn:hover{filter:brightness(1.05)}
+    footer{margin:28px 0 8px;opacity:.8}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a href="index.html">Akèy</a>
+      <a href="music.html">Mizik</a>
+      <a href="galery.html">Galri</a>
+      <a href="contact.html">Kontak</a>
+      <a href="security.html" class="active">Sekirite</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Sekirite sit la <span class="badge">BSS 1815</span></h1>
+    <p class="muted">Nou pran pwoteksyon done w yo oserye. Paj sa a esplike ki pratik sekirite nou suiv sou <strong>briyantsoleysigno1815.com</strong>.</p>
+
+    <section class="card">
+      <h2>Angajman nou</h2>
+      <ul>
+        <li>N ap itilize HTTPS pou tout trafik sit la.</li>
+        <li>Nou limite koleksyon done pèsonèl yo sèlman pou sa ki nesesè.</li>
+        <li>Modpas/kle yo pa janm pibliye nan kòd piblik.</li>
+        <li>Nou mete ajou depandans yo regilyèman.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Ki done nou ranmase?</h2>
+      <p>Si w voye yon mesaj nan paj <em>Kontak</em>, nou resevwa non ou, imel ou, ak kontni mesaj la pou nou reponn ou. Nou pa vann done sa yo, e nou kenbe yo sèlman pou objektif sipò/kominikasyon.</p>
+    </section>
+
+    <section class="card">
+      <h2>Bonbon (Cookies) & Analitik</h2>
+      <p>Nou ka itilize bonbon ki nesesè pou fonksyònman navigasyon ak mezi debaz; pa gen suiv piblisite sou sit sa a.</p>
+    </section>
+
+    <section class="card">
+      <h2>Pati Twazyèm</h2>
+      <p>Si gen videyo oswa lektè mizik entegre (eg. YouTube/Spotify), founisè sa yo ka mete pwòp bonbon yo selon règleman yo.</p>
+    </section>
+
+    <section class="card">
+      <h2>Pwoblèm sekirite? Rapòte li</h2>
+      <p>Si w sispèk yon vilnerabilite oswa w wè yon bagay ki pa nòmal, tanpri ekri nou dirèkteman:</p>
+      <p><a class="btn" href="contact.html">Rapòte yon pwoblèm sekirite</a></p>
+      <p class="muted">Lè w rapòte yon ensidan, pa enkli modpas oswa done sansib nan mesaj la.</p>
+    </section>
+
+    <section class="card">
+      <h2>Mizajou règleman sa a</h2>
+      <p>Dènye mizajou: <span id="lastUpdated"></span></p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    &copy; <span id="y"></span> Briyant Solèy Signo 1815 • <a href="index.html">Retounen lakay</a>
+  </footer>
+
+  <script>
+    // make active link (si ou te mete snippet sa a sou tout paj yo deja, ou ka retire li isit)
+    const here = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('nav a').forEach(a=>{
+      if(a.getAttribute('href')===here){ a.classList.add('active'); }
+    });
+    // dat otomatik
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
