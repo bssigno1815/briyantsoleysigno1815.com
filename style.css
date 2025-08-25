@@ -11,6 +11,19 @@
 .site-voice-banner .voice-btn[aria-pressed="true"]{
   background:#222; color:#ffd280;
 }
+.site-voice-banner small{opacity:.8}/* Bann vwa/istwa */
+.site-voice-banner{
+  display:flex; gap:.75rem; align-items:center; justify-content:center;
+  background:#ffb000; color:#111; padding:10px 14px; text-align:center;
+  border-bottom:2px solid #111; flex-wrap:wrap;
+}
+.site-voice-banner .voice-btn{
+  padding:8px 12px; border:1px solid #111; border-radius:10px;
+  background:#111; color:#ffb000; font-weight:700; cursor:pointer;
+}
+.site-voice-banner .voice-btn[aria-pressed="true"]{
+  background:#222; color:#ffd280;
+}
 .site-voice-banner small{opacity:.8}<section class="card">
   <h2>Lis Admin yo</h2>
 
