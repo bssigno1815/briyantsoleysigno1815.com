@@ -1,4 +1,42 @@
-<!DOCTYPE html><html lang="ht"><head>
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri — BSS 1815</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="theme-abtiko-nwa.css" />
+</head>
+<body>
+<header>
+  <h1>Galeri BSS 1815</h1>
+  <nav>
+    <a href="index.html">Akèy</a>
+    <a href="music.html">Mizik</a>
+    <a href="video.html">Videyo</a>
+    <a href="galery.html">Galeri</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Foto</h2>
+    <p>Mete foto yo isit la.</p>
+    <!-- Egzanp:
+    <div class="grid">
+      <img src="assets/img/photo1.jpg" alt="Foto 1">
+      <img src="assets/img/photo2.jpg" alt="Foto 2">
+    </div>
+    -->
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Briyant Solèy Signo 1815</p>
+</footer>
+</body>
+</html><!DOCTYPE html><html lang="ht"><head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak — Briyant Solèy Signo 1815</title>
   <link rel="stylesheet" href="style.css">
