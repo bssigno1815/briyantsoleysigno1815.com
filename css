@@ -75,4 +75,60 @@ button[type=submit].btn{align-self:start}
 footer{
   margin:32px auto; color:var(--muted); text-align:left;
   max-width:980px; padding:0 16px;
+}/* --- Ajout style Briyant Solèy Signo 1815 --- */
+
+/* Background ak koulè prensipal yo */
+body {
+  background-color: #000000; /* nwa */
+  color: #FFB347; /* jon abrikot pou tèks default */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tit prensipal yo */
+h1, h2, h3 {
+  color: #FFB347; /* jon abrikot */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bouton yo */
+button, .btn {
+  background-color: #FFB347;
+  color: #000000; /* nwa sou bouton */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: #e6952f; /* pi fonse abrikot */
+}
+
+/* Link yo */
+a {
+  color: #FFB347;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Seksyon prensipal */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Header / footer */
+header, footer {
+  background-color: #111111; /* nwa pi fonse */
+  padding: 20px;
+  text-align: center;
+  color: #FFB347;
 }
