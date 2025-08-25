@@ -1,0 +1,78 @@
+/* --- Palèt koulè --- */
+:root{
+  --bg:#0b0b0b;          /* nwa fon */
+  --panel:#131313;       /* nwa pi limyè pou kat/nav */
+  --text:#f5f5f7;        /* tèks klè */
+  --muted:#b3b3b3;       /* tèks segondè */
+  --abriko:#ffb347;      /* jòn abrikot */
+  --abriko-dark:#ff9a1a; /* hover/aksan */
+  --border:#272727;
+}
+
+/* --- Baz --- */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:radial-gradient(1200px 1200px at 10% -20%, #1a1a1a 0%, #0d0d0d 45%, #000 100%),
+             var(--bg);
+}
+
+/* --- Header / Nav --- */
+header{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:18px 20px;border-bottom:1px solid var(--border);
+  background:linear-gradient(0deg, rgba(255,179,71,0.06), rgba(255,179,71,0.06));
+}
+
+header .brand{
+  font-weight:800;font-size:20px;letter-spacing:.3px;
+}
+
+nav a{
+  display:inline-block;text-decoration:none;
+  color:var(--text);border:1px solid var(--border);
+  padding:10px 14px;border-radius:10px;margin-left:10px;
+  transition:all .2s ease;
+}
+nav a:hover{border-color:var(--abriko); color:var(--abriko)}
+
+/* --- Bouton Aksyon --- */
+.btn{
+  background:var(--abriko); color:#111; font-weight:700;
+  border:1px solid var(--abriko-dark); border-radius:12px;
+  padding:10px 16px; text-decoration:none; display:inline-block;
+  box-shadow:0 6px 20px rgba(255,179,71,.18);
+}
+.btn:hover{filter:brightness(1.06)}
+
+/* --- Layout kontni --- */
+.wrap{max-width:980px;margin:24px auto;padding:0 16px}
+
+.card{
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:16px; padding:22px; margin:18px 0;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+h1,h2{margin:0 0 10px}
+.muted{color:var(--muted)}
+
+/* --- Fòm (paj Contact) --- */
+form{display:grid;gap:12px}
+input,textarea{
+  width:100%; background:#0f0f10; color:var(--text);
+  border:1px solid var(--border); border-radius:10px;
+  padding:12px 12px;
+}
+input:focus,textarea:focus{outline:none;border-color:var(--abriko)}
+button[type=submit]{cursor:pointer}
+button[type=submit].btn{align-self:start}
+
+/* --- Footer --- */
+footer{
+  margin:32px auto; color:var(--muted); text-align:left;
+  max-width:980px; padding:0 16px;
+}
