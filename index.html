@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Briyant Solèy Signo 1815 — Ofisyèl</title>
+  <meta name="description" content="Briyant Solèy Signo 1815 — Toujou kléré, toujou vivan." />
+  <style>
+    :root{
+      --apricot:#F49B1A;   /* jòn abriko */
+      --black:#0b0b0b;     /* nwa */
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color:var(--white);
+      background: linear-gradient(180deg, var(--apricot) 0%, #c57510 35%, #3c2f1d 65%, var(--black) 100%);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .wrap{max-width:980px; width:100%; padding:32px 18px; text-align:center}
+    .brand{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:200px; height:200px; border-radius:100%;
+      background:radial-gradient(circle at 50% 40%, var(--apricot), #d0740e 70%, #1b1b1b 100%);
+      box-shadow:0 12px 35px rgba(0,0,0,.45), inset 0 0 0 8px #000, inset 0 0 0 14px var(--apricot);
+      overflow:hidden;
+      margin:0 auto 18px;
+    }
+    .brand img{width:90%; height:90%; object-fit:contain; filter: drop-shadow(0 2px 2px rgba(0,0,0,.35));}
+    h1{margin:8px 0 4px; font-size:34px; letter-spacing:.5px}
+    .tag{opacity:.95; font-weight:700; font-size:15px; letter-spacing:.4px; margin-bottom:20px}
+    blockquote{
+      margin:18px auto 0; padding:16px 18px; line-height:1.6; font-size:18px; max-width:820px;
+      background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.12); border-radius:14px;
+    }
+    .footer{margin-top:16px; font-size:13px; opacity:.8}
+    @media (min-width:740px){
+      .brand{width:240px;height:240px}
+      h1{font-size:42px}
+      blockquote{font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-label="Briyant Solèy Signo 1815">
+    <!-- LOGO -->
+    <div class="brand" aria-hidden="true">
+      <!-- Put your logo in /public/logo-bss.png or change the path below -->
+      <img src="/public/logo-bss.png" alt="Logo Briyant Solèy Signo 1815" />
+    </div>
+
+    <!-- TITLES -->
+    <h1>BRIYANT SOLÈY SIGNO 1815</h1>
+    <div class="tag">Toujou kléré, toujou vivan</div>
+
+    <!-- SLOGAN -->
+    <blockquote>
+      “Lavi se yon vwayaj pa yon destinasyon, chak moman konte, chak eksperyans fòme nou,
+      e chak defèt se yon etap plis pou nou aprann ak grandi.”
+    </blockquote>
+
+    <div class="footer">© Briyant Solèy Signo 1815</div>
+  </main>
+</body>
+</html>
