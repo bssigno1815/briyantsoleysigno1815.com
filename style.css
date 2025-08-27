@@ -23,3 +23,4 @@ blockquote{
 .links a{color:var(--apricot);text-decoration:none;border:1px solid #333;padding:8px 14px;border-radius:999px;font-weight:700}
 .links a:hover{border-color:var(--apricot);color:#111;background:var(--apricot)}
 footer{margin-top:16px;font-size:13px;opacity:.8}
+<link rel="stylesheet" href="style.css">
