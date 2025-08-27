@@ -1,0 +1,84 @@
+set -euo pipefail
+
+echo "==> 0) Fè yon backup rapid (sekirite anvan tout bagay)"
+git fetch --all || true
+git tag -f backup-before-security-fix
+git push --tags --force || true
+
+echo "==> 1) Efase tout vèsyon ki gen move non yo si yo egziste"
+rm -f securit.html securitt.html securittt.html SECURITY.html Security.html || true
+git rm -f securit.html securitt.html securittt.html SECURITY.html Security.html 2>/dev/null || true
+
+echo "==> 2) Kreye paj ofisyèl la: security.html (pwòp, san 404)"
+cat > security.html <<'HTML'
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sekirite & Regleman</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/index.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html">Akèy</a>
+      <a href="/security.html" aria-current="page">Sekirite</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Règleman Sekirite</h1>
+    <p>Paj sa a eksplike kijan nou pwoteje done ak sekirite itilizatè yo sou sit la.</p>
+
+    <section>
+      <h2>Sa nou kolekte</h2>
+      <ul>
+        <li>Enfòmasyon kontak (si ou voye mesaj)</li>
+        <li>Done analiz trafik (anonim)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kijan nou pwoteje yo</h2>
+      <ul>
+        <li>HTTPS sou tout paj</li>
+        <li>Restriksyon aksè admin</li>
+        <li>Mizajou regilye</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kontakte nou</h2>
+      <p>Kesyon sou sekirite: <a href="mailto:contact@domain.com">contact@domain.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Tout dwa rezève.</small>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+HTML
+
+echo "==> 3) Mete meni/link kòrèk nan index.html (si paj la egziste)"
+if [ -f index.html ]; then
+  # ranplase tout referans ki te mal ekri yo ak security.html
+  if sed --version >/dev/null 2>&1; then
+    # GNU sed
+    sed -i 's/securit\+\.html/security.html/gI' index.html
+  else
+    # macOS sed
+    sed -i '' 's/securit\+\.html/security.html/gI' index.html
+  fi
+fi
+
+echo "==> 4) Commit & push — Vercel ap rebati otomatikman"
+git add -A
+git commit -m "Efase ansyen *securit*.html; ajoute paj ofisyèl security.html; mete lyen kòrèk"
+git push
+echo "==> Fini ✅  — security.html an plas, tout ansyen non yo efase."
