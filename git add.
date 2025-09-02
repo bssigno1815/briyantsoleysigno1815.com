@@ -1,3 +1,0 @@
-git add .
-git commit -m "Migrate to Next.js: pages/, public/; remove index.html"
-git push origin main
