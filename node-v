@@ -1,4 +1,0 @@
-node -v
-npm -v
-npx next info
-npm run build
