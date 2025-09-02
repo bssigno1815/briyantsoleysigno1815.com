@@ -1,3 +1,0 @@
-git add .
-git commit -m "Rescue deploy: minimal Next scaffold"
-git push origin main
