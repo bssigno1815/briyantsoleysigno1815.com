@@ -1,47 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="ht">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BSS — Kontakte nou</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HEADER AK LOGO (MENM AK INDEX) -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Briyant Solèy Signo 1815</a>
-      <nav class="nav">
-        <a href="index.html">Akèy</a>
-        <a href="store.html">Magazin</a>
-        <a href="contact.html" class="active">Kontakte</a>
-      </nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="BSS 1815 Logo">
+      <h1>Briyant Solèy Signo 1815</h1>
     </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Akèy</a></li>
+        <li><a href="store.html">Magazin</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Kontakte nou</h1>
-    <form class="card form" action="mailto:maximaxmultiservices@gmail.com" method="post">
+    <h2 class="page-title">Kontakte nou</h2>
+    <form class="card form" action="#" method="post">
       <label>Non
-        <input type="text" name="name" placeholder="Non w" required />
+        <input type="text" placeholder="Non ou">
       </label>
       <label>Imèl
-        <input type="email" name="email" placeholder="ou@egzanp.com" required />
+        <input type="email" placeholder="egzanp@imel.com">
       </label>
       <label>Mesaj
-        <textarea name="message" rows="5" placeholder="Ekri mesaj ou la..." required></textarea>
+        <textarea rows="5" placeholder="Ekri mesaj ou la…"></textarea>
       </label>
       <button class="btn primary" type="submit">Voye</button>
     </form>
-
-    <p class="muted">Ou ka ekri dirèk tou: 
-      <a href="mailto:maximaxmultiservices@gmail.com">maximaxmultiservices@gmail.com</a>
-    </p>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Briyant Solèy Signo 1815.</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Briyant Solèy Signo 1815</p>
   </footer>
 </body>
 </html>
