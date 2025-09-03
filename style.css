@@ -1,62 +1,75 @@
-
-/* STYLE MAGAZEN BSS */
-
-/* Background jeneral */
-body {
+/* HEADER AK LOGO */
+header.site-header {
   background-color: #000000; /* Nwa */
-  color: #ffffff; /* Tèks blan pou kontrast */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header ak logo */
-header {
-  background-color: #000000;
-  color: #FBCEB1; /* Jòn Abrikot */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   text-align: center;
-  padding: 20px;
+  border-bottom: 3px solid #FBCEB1; /* Liy abrikot anba header la */
 }
 
-header img {
-  width: 150px;
+header .logo img {
+  width: 180px;   /* Tail logo a */
   height: auto;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto;
 }
 
-/* Tit prensipal */
-h1, h2, h3 {
-  color: #FBCEB1; /* Jòn Abrikot */
+/* TIT AK NAVIGASYON */
+header h1 {
+  color: #FBCEB1; /* Abrikot */
+  font-size: 1.8em;
+  margin: 10px 0 0 0;
 }
 
-/* Bouton */
-button, .btn {
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #FBCEB1; /* Abrikot */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffffff; /* Blan sèlman lè souri pase */
+}
+
+/* BOUTON YO */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background-color: #FBCEB1; /* Abrikot */
+  color: #000000; /* Nwa */
+}
+
+.btn.primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border: 2px solid #FBCEB1;
+  color: #FBCEB1;
+}
+
+.btn.ghost:hover {
   background-color: #FBCEB1;
   color: #000000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-button:hover, .btn:hover {
-  background-color: #e6b89c; /* Pi fonse abrikot */
-}
-
-/* Kadyò pwodwi yo */
-.product-card {
-  background-color: #111111; /* Nwa pi klè */
-  border: 1px solid #FBCEB1;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px;
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
