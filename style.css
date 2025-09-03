@@ -1,45 +1,49 @@
-/* Koulè ofisyèl: nwa (#000) ak abriko (#FFB347) */
+/* Briyant Solèy Signo 1815 Styles */
+
+/* Background + Font */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* nwa */
+  color: #fff; /* blan pou tèks */
 }
 
+/* Header / Nav */
 header {
-  background-color: #FFB347;
+  background-color: #f4a261; /* jon abrikot */
   padding: 15px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  color: #000;
-}
-
 nav a {
-  margin: 0 10px;
+  color: #000; /* nwa sou abrikot */
+  margin: 0 15px;
   text-decoration: none;
-  color: #000;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #fff; /* blan lè ou pase sou yo */
 }
 
-main {
-  padding: 20px;
-  text-align: center;
+/* Tit */
+h1, h2, h3 {
+  color: #f4a261; /* jon abrikot */
 }
 
-footer {
-  background-color: #FFB347;
+/* Bouton */
+button {
+  background-color: #f4a261;
+  border: none;
+  padding: 10px 20px;
   color: #000;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e76f51; /* yon ti wouj fonse */
+  color: #fff;
 }
