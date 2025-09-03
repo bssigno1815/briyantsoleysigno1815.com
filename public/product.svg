@@ -1,0 +1,5 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#000"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#ff8c00" stroke-width="8"/>
+  <text x="50%" y="50%" fill="#ff8c00" font-size="48" font-family="Arial" font-weight="bold" text-anchor="middle">Drapo BSS</text>
+</svg>
