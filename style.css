@@ -1,75 +1,86 @@
-/* HEADER AK LOGO */
-header.site-header {
+/* STYLE MAGAZEN BSS */
+
+/* Background jeneral */
+body {
   background-color: #000000; /* Nwa */
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  text-align: center;
-  border-bottom: 3px solid #FBCEB1; /* Liy abrikot anba header la */
-}
-
-header .logo img {
-  width: 180px;   /* Tail logo a */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* TIT AK NAVIGASYON */
-header h1 {
-  color: #FBCEB1; /* Abrikot */
-  font-size: 1.8em;
-  margin: 10px 0 0 0;
-}
-
-.navbar ul {
-  list-style: none;
+  color: #FBCEB1; /* Jòn Abriko */
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
-.navbar ul li a {
-  color: #FBCEB1; /* Abrikot */
+/* Header ak logo */
+header {
+  background-color: #000000;
+  color: #FBCEB1;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+}
+
+/* Navigasyon */
+nav {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #FBCEB1;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-  color: #ffffff; /* Blan sèlman lè souri pase */
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* BOUTON YO */
+/* Bouton */
 .btn {
   display: inline-block;
   padding: 10px 20px;
+  margin: 10px;
   border-radius: 5px;
   font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+  text-align: center;
 }
 
 .btn.primary {
-  background-color: #FBCEB1; /* Abrikot */
-  color: #000000; /* Nwa */
+  background-color: #FBCEB1; /* Jòn Abriko */
+  color: #000000; /* Tèks nwa */
 }
 
 .btn.primary:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #d9a772; /* Ton pi fon nan jòn abrikot */
 }
 
 .btn.ghost {
-  background-color: transparent;
   border: 2px solid #FBCEB1;
   color: #FBCEB1;
+  background: transparent;
 }
 
 .btn.ghost:hover {
   background-color: #FBCEB1;
   color: #000000;
+}
+
+/* Kontni prensipal */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #FBCEB1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
