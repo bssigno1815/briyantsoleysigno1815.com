@@ -1,86 +1,23 @@
-/* STYLE MAGAZEN BSS */
-
-/* Background jeneral */
-body {
-  background-color: #000000; /* Nwa */
-  color: #FBCEB1; /* Jòn Abriko */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header ak logo */
-header {
-  background-color: #000000;
-  color: #FBCEB1;
+.main-header {
   text-align: center;
-  padding: 20px;
+  background: black;
+  padding: 30px 20px;
 }
 
-header img {
-  width: 150px;
+.logo {
+  width: 180px;   /* ou ka monte/lage selon ou vle */
   height: auto;
+  margin-bottom: 15px;
 }
 
-/* Navigasyon */
-nav {
-  background-color: #000000;
-  text-align: center;
-  padding: 10px 0;
+.main-header h1 {
+  color: #ff8c00; /* orange */
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
-nav a {
-  color: #FBCEB1;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Bouton */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn.primary {
-  background-color: #FBCEB1; /* Jòn Abriko */
-  color: #000000; /* Tèks nwa */
-}
-
-.btn.primary:hover {
-  background-color: #d9a772; /* Ton pi fon nan jòn abrikot */
-}
-
-.btn.ghost {
-  border: 2px solid #FBCEB1;
-  color: #FBCEB1;
-  background: transparent;
-}
-
-.btn.ghost:hover {
-  background-color: #FBCEB1;
-  color: #000000;
-}
-
-/* Kontni prensipal */
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  background-color: #000000;
-  color: #FBCEB1;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
+.slogan {
+  color: #ff8c00;
+  font-style: italic;
+  font-size: 1.2rem;
 }
