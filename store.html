@@ -2,50 +2,55 @@
 <html lang="ht">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BSS — Magazin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HEADER AK LOGO (MENM AK INDEX) -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Briyant Solèy Signo 1815</a>
-      <nav class="nav">
-        <a href="index.html">Akèy</a>
-        <a href="store.html" class="active">Magazin</a>
-        <a href="contact.html">Kontakte</a>
-      </nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="BSS 1815 Logo">
+      <h1>Briyant Solèy Signo 1815</h1>
     </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Akèy</a></li>
+        <li><a href="store.html" class="active">Magazin</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Magazin</h1>
+    <h2 class="page-title">Magazin</h2>
+
     <div class="grid">
-      <article class="product">
-        <div class="thumb"></div>
+      <article class="product card">
+        <img src="images/prod1.jpg" alt="Chanday BSS">
         <h3>Chanday BSS</h3>
         <p>100% koton, logo BSS devan.</p>
-        <button class="btn primary" type="button">Achte</button>
+        <a class="btn primary" href="#">Achte</a>
       </article>
-      <article class="product">
-        <div class="thumb"></div>
+
+      <article class="product card">
+        <img src="images/prod2.jpg" alt="Chapo BSS">
         <h3>Chapo BSS</h3>
-        <p>Edisyon limite — Jon Abriko & Nwa.</p>
-        <button class="btn primary" type="button">Achte</button>
+        <p>Ediksyon limite — Jon Abriko & Nwa.</p>
+        <a class="btn primary" href="#">Achte</a>
       </article>
-      <article class="product">
-        <div class="thumb"></div>
+
+      <article class="product card">
+        <img src="images/prod3.jpg" alt="Bandana BSS">
         <h3>Bandana BSS</h3>
         <p>Pi bon akseswa pou fèt rara yo.</p>
-        <button class="btn primary" type="button">Achte</button>
+        <a class="btn primary" href="#">Achte</a>
       </article>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Briyant Solèy Signo 1815. Tout dwa rezève.</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Briyant Solèy Signo 1815</p>
   </footer>
 </body>
 </html>
