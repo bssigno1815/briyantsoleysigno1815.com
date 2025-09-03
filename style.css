@@ -1,80 +1,62 @@
-/* --------- BSS Theme: Jon Abriko & Nwa --------- */
-:root{
-  --apricot:#FFB347;     /* Jon Abriko */
-  --apricot-dark:#e09f3e;
-  --black:#000000;
-  --offblack:#0f0f10;
-  --text:#f6f6f6;
-  --muted:#c9c9c9;
-  --card:#151515;
-  --white:#ffffff;
+
+/* STYLE MAGAZEN BSS */
+
+/* Background jeneral */
+body {
+  background-color: #000000; /* Nwa */
+  color: #ffffff; /* Tèks blan pou kontrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  color:var(--text);
-  background: linear-gradient(135deg, var(--offblack) 55%, var(--apricot) 140%);
-  min-height:100dvh;
+/* Header ak logo */
+header {
+  background-color: #000000;
+  color: #FBCEB1; /* Jòn Abrikot */
+  text-align: center;
+  padding: 20px;
 }
 
-/* Layout */
-.container{max-width:1100px;margin-inline:auto;padding:0 1rem}
-.site-header{
-  position:sticky;top:0;z-index:10;
-  background:linear-gradient(90deg,var(--black),#111111);
-  border-bottom:1px solid #1e1e1e;
+header img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
 }
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{
-  color:var(--apricot);text-decoration:none;font-weight:800;letter-spacing:.3px;
+
+/* Tit prensipal */
+h1, h2, h3 {
+  color: #FBCEB1; /* Jòn Abrikot */
 }
-.nav a{
-  color:var(--text);text-decoration:none;margin-left:1rem;padding:.4rem .6rem;border-radius:.5rem;
-  transition:all .2s ease;
+
+/* Bouton */
+button, .btn {
+  background-color: #FBCEB1;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
-.nav a:hover{background:#1b1b1b}
-.nav a.active{background:var(--apricot);color:#1b1b1b;font-weight:700}
-
-.hero{
-  background: radial-gradient(1200px 500px at 20% -10%, var(--apricot) 0%, transparent 60%);
-  padding:4rem 0 3rem;
+button:hover, .btn:hover {
+  background-color: #e6b89c; /* Pi fonse abrikot */
 }
-.hero h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 .5rem}
-.tagline{max-width:60ch;margin:0 0 1.25rem;color:var(--muted)}
-.cta-row{display:flex;gap:.75rem;flex-wrap:wrap}
 
-/* Cards / sections */
-.split{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:2rem 0}
-.card{
-  background:var(--card);border:1px solid #1e1e1e;border-radius:14px;padding:1rem
+/* Kadyò pwodwi yo */
+.product-card {
+  background-color: #111111; /* Nwa pi klè */
+  border: 1px solid #FBCEB1;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
 }
-.page-title{margin:1.75rem 0 .75rem}
 
-/* Buttons */
-.btn{display:inline-block;border:none;cursor:pointer;border-radius:999px;padding:.7rem 1.1rem;font-weight:700}
-.btn.primary{background:var(--apricot);color:#111}
-.btn.primary:hover{background:var(--apricot-dark)}
-.btn.ghost{background:transparent;border:1px solid var(--apricot);color:var(--apricot)}
-.btn.ghost:hover{background:#1b1b1b}
-
-/* Store grid */
-.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:1rem 0 2rem}
-.product{background:var(--card);border:1px solid #1e1e1e;border-radius:14px;padding:1rem}
-.product .thumb{height:140px;border-radius:10px;margin-bottom:.75rem;
-  background:linear-gradient(135deg,var(--apricot),#ffd49a 60% ,#383838 60%);}
-
-/* Forms */
-.form{display:grid;gap:.75rem;max-width:640px}
-.form label{display:grid;gap:.35rem;font-weight:600}
-input,textarea{
-  background:#101010;color:var(--text);border:1px solid #262626;border-radius:10px;padding:.7rem .8rem;
+.product-card img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
-input:focus,textarea:focus{outline:2px solid var(--apricot)}
-
-.muted{color:var(--muted)}
-
-/* Footer */
-.site-footer{border-top:1px solid #1e1e1e;margin-top:2rem;padding:1rem 0;background:#0b0b0b}
-.site-footer p{margin:0;text-align:center;color:var(--muted)}
