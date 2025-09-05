@@ -1,91 +1,62 @@
-.product-card {
-  background: #111;
-  border-radius: 12px;
+/* Koulè prensipal yo: Jon Abrikot (#FFB347) ak Nwa (#000000) */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  background: linear-gradient(90deg, #FFB347, #000000);
+  color: #fff;
   padding: 20px;
-  margin: 10px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.product-logo {
-  width: 70px;
-  height: auto;
-  margin-bottom: 10px;
-}==============================
-BRIYANT SOLÈY SIGNO 1815
-BACKUP DEPLOYMAN
-==============================
-
-📅 Dat Backup: 03-09-2025  
-👤 Repo: bssigno1815/briyantsoleysigno1815-site  
-🌐 Domèn: www.briyantsoleysigno1815.com  
-⚙️ Hosting: Vercel (Production)
-
-------------------------------
-✅ DEPLOYMAN SIKSÈ
-------------------------------
-1. ID Deployman: xxxxxxxx
-   Eta: READY
-   Lè: 1 èdtan pase
-
-2. ID Deployman: xxxxxxxx
-   Eta: READY
-   Lè: 45 minit pase
-
-3. ID Deployman: xxxxxxxx
-   Eta: READY
-   Lè: 30 minit pase
-
-... (ou ka ajoute plis si genyen)
-
-------------------------------
-📌 NÒT
-------------------------------
-- Koulè ofisyèl: Jon Abrikot & Nwa  
-- Logo mete sou tout paj  
-- CSS verifye & mete ajou  
-- 9 deployman siksè (tout vèt ✅)  
-
-==============================
-✍️ Backup sa a sove pou referans
-==============================/* NAVBAR STYLE */
-.topnav {
-  display:flex;
-  gap:14px;
-  align-items:center;
-  background:#000;   /* nwa background */
-  padding:12px 20px;
-  border-bottom:2px solid #F4A261; /* liy zoranj abrikot */
+header .logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
-.nav-link {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:10px 14px;
-  border-radius:10px;
-  text-decoration:none;
-  color:#F4A261;     /* zoranj abrikot */
-  font-weight:600;
-  transition:background .2s;
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.nav-link:hover {
-  background:rgba(244,162,97,.08);
+nav a:hover {
+  color: #FFB347;
 }
 
-.nav-link[aria-current="page"] {
-  background:rgba(244,162,97,.12);
+h1, h2, h3 {
+  color: #FFB347;
 }
 
-.nav-logo-mini {
-  width:22px;
-  height:22px;
-  display:block;
-  filter:drop-shadow(0 1px 1px rgba(0,0,0,.35));
+section {
+  padding: 20px;
+  text-align: center;
 }
 
-@media (max-width:640px){
-  .topnav{flex-wrap:wrap; gap:10px}
-  .nav-logo-mini{width:18px; height:18px}
+.product {
+  background: #111;
+  border: 2px solid #FFB347;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 250px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
 }
