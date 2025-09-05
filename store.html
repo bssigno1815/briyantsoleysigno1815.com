@@ -2,57 +2,29 @@
 <!DOCTYPE html>
 <html lang="ht">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BSS 1815 — Store</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazin BSS</title>
+  <link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
-  <header class="main-header">
-    <img src="/logo.svg" alt="BSS 1815 Logo" class="logo"/>
-    <h1>Boutik Ofisyèl BSS</h1>
-    <p class="slogan">Achte atik ofisyèl yo</p>
+  <header>
+    <h1>Magazin BSS</h1>
+    <nav>
+      <a href="/index.html">Akèy</a>
+      <a href="/video.html">Videyo</a>
+      <a href="/contact.html">Kontak</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">Akèy</a>
-    <a href="store.html">Boutik</a>
-    <a href="videyo.html">Videyo</a>
-    <a href="leadership.html">Dirijan</a>
-    <a href="contact.html">Kontak</a>
-  </nav>
-
-  <section class="section">
-    <h2>Pwodui yo</h2>
-    <div id="products" class="products"></div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Briyant Solèy Signo 1815</p>
-  </footer>
-
-  <script>
-    async function loadProducts(){
-      try{
-        const res = await fetch('/products.json', { cache:'no-store' });
-        const data = await res.json();
-        const el = document.getElementById('products');
-        el.innerHTML = data.map(p => `
-          <div class="card">
-            <img src="${p.image}" alt="${p.name}"/>
-            <div class="body">
-              <h3>${p.name}</h3>
-              <p class="price">$${p.price}</p>
-              <a class="btn" href="#">Ajoute nan panyen</a>
-            </div>
-          </div>
-        `).join('');
-      }catch(e){
-        document.getElementById('products').innerHTML =
-          '<p>Pa gen done pwodwi. Tcheke /products.json ak /public/products/*.svg</p>';
-      }
-    }
-    loadProducts();
-  </script>
+  <main>
+    <h2>Pwodwi ofisyèl</h2>
+    <ul>
+      <li>T-shirt</li>
+      <li>Kèpi</li>
+      <li>Braslè</li>
+      <li>Drapo</li>
+      <li>Godé</li>
+    </ul>
+  </main>
 </body>
 </html>
