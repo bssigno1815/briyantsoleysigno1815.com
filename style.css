@@ -1,4 +1,17 @@
-==============================
+.product-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.product-logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}==============================
 BRIYANT SOLÈY SIGNO 1815
 BACKUP DEPLOYMAN
 ==============================
