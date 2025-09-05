@@ -1,21 +1,92 @@
-<section id="magazin">
-  <h2>Magazin</h2>
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briyant Solèy Signo 1815</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #FFB347;
+      text-align: center;
+    }
 
-  <div class="product-card">
-    <img src="/bss-logo.png" alt="Logo BSS" class="product-logo" />
-    <h3>Chemizay BSS</h3>
-    <p>100% koton, logo BSS devan.</p>
-  </div>
+    header {
+      background-color: #FFB347;
+      color: #000000;
+      padding: 20px;
+    }
 
-  <div class="product-card">
-    <img src="/bss-logo.png" alt="Logo BSS" class="product-logo" />
-    <h3>Chapo BSS</h3>
-    <p>Edisyon limite – Jon Abrikot & Nwa.</p>
-  </div>
+    header img {
+      max-height: 100px;
+    }
 
-  <div class="product-card">
-    <img src="/bss-logo.png" alt="Logo BSS" class="product-logo" />
-    <h3>Braslè BSS</h3>
-    <p>Pwodwi espesyal fanatik yo.</p>
-  </div>
-</section>feat(navbar): new BSS nav with logo + official colors
+    h1 {
+      margin: 10px 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product {
+      background-color: #111111;
+      border: 2px solid #FFB347;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .product h2 {
+      color: #FFB347;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #FFB347;
+      color: #000000;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Mete logo BSS isit la -->
+    <img src="logo-bss.png" alt="Logo Briyant Solèy Signo 1815" />
+    <h1>Briyant Solèy Signo 1815</h1>
+  </header>
+
+  <main>
+    <h2>Magazin Ofisyèl</h2>
+    <div class="products">
+      <div class="product">
+        <h2>Chanday BSS</h2>
+        <p>100% koton, logo BSS devan.</p>
+      </div>
+
+      <div class="product">
+        <h2>Chapo BSS</h2>
+        <p>Edisyon limite – Jon Abrikot & Nwa.</p>
+      </div>
+
+      <div class="product">
+        <h2>Bagèt BSS</h2>
+        <p>Pibyèt ak logo ofisyèl.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Briyant Solèy Signo 1815 - Tout dwa rezève</p>
+  </footer>
+</body>
+</html>
