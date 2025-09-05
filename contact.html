@@ -1,33 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="ht">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kontak — BSS 1815</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak BSS</title>
+  <link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
-  <header class="main-header">
-    <img src="/logo.svg" alt="BSS 1815 Logo" class="logo"/>
-    <h1>Kontak</h1>
-    <p class="slogan">Ekris nou pou nenpòt demann</p>
+  <header>
+    <h1>Kontakte nou</h1>
+    <nav>
+      <a href="/index.html">Akèy</a>
+      <a href="/store.html">Magazin</a>
+      <a href="/video.html">Videyo</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">Akèy</a>
-    <a href="store.html">Boutik</a>
-    <a href="videyo.html">Videyo</a>
-    <a href="leadership.html">Dirijan</a>
-    <a href="contact.html">Kontak</a>
-  </nav>
-
-  <section class="section">
-    <h2>Enfòmasyon</h2>
-    <p>Imèl: <b>briyantsigno@gmail.com</b></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Briyant Solèy Signo 1815</p>
-  </footer>
+  <main>
+    <form>
+      <label>Non:</label>
+      <input type="text" name="name" required><br><br>
+      <label>Imèl:</label>
+      <input type="email" name="email" required><br><br>
+      <label>Mesaj:</label><br>
+      <textarea name="message" rows="5"></textarea><br><br>
+      <button type="submit">Voye</button>
+    </form>
+  </main>
 </body>
 </html>
