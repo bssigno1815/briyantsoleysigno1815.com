@@ -1,0 +1,7 @@
+package.json
+package-lock.json / yarn.lock / pnpm-lock.yaml
+pages/    oswa  app/
+index.js  (nan rasin oswa anwo nan nenpòt folder ki fè konfizyon)
+vercel.js
+vercel.json   (nap mete pita si ou vle “rewrites”; pou kounye a pa nesesè)
+node_modules/ (pa ta dwe nan repo a menm)
