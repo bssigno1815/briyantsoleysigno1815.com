@@ -1,4 +1,9 @@
-<!doctype html>
+<!doctype html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BSS</title>
+<body style="margin:0;font-family:sans-serif;display:grid;place-items:center;height:100vh;background:#111;color:#fff;text-align:center">
+  <main><h1>Byenveni BSS</h1><p>Static deploy ✅</p></main>
+</body><!doctype html>
 <html lang="ht">
 <head>
   <meta charset="utf-8">
