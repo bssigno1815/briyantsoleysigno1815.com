@@ -1,0 +1,40 @@
+/* Background nwa -> zoranj abrikòt */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, system-ui, sans-serif;
+  color: #fff;
+  background: linear-gradient(180deg, #000 0%, #FF8C42 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Header ak logo */
+.site-header {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.site-header img {
+  width: 140px;
+  height: auto;
+}
+
+/* Kontni */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  color: #FFB871;
+  font-weight: 700;
+  padding: 20px 0 32px;
+}
