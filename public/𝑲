@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Paj pa jwenn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* nwa */
+      color: #ffa500; /* jon abrikot */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      background: #ffa500;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    a:hover {
+      background: #ffcc66;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Paj ou chèche a pa egziste.</p>
+  <a href="/">Retounen lakay</a>
+</body>
+</html>
