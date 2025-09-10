@@ -1,4 +1,9 @@
-/* Background nwa -> zoranj abrikòt */
+"engines": { "node": "22.x" },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
+  }/* Background nwa -> zoranj abrikòt */
 html, body {
   height: 100%;
 }
