@@ -1,4 +1,11 @@
-body{ background:#000; } /* rès paj la rete nwa */
+:root{ --apricot:#F4A261; } /* aprikot cho */
+
+body{ background:#000; }
+
+.header-hero{
+  /* aplike klas sa sou bann anlè a */
+  background: linear-gradient(90deg, var(--apricot) 0%, #1a1a1a 80%, #000 100%);
+}body{ background:#000; } /* rès paj la rete nwa */
 .hero{
   min-height: 320px; /* oswa wotè ou vle */
   background: linear-gradient(90deg, var(--apricot) 0%, #E6972E 40%, #000 100%);
