@@ -1,0 +1,12 @@
+/* chwazi vrè apricot ou: */
+:root { --apricot: #FBCEB1; /* oswa #F6B26B / #F4A261 */ }
+
+.header-hero{
+  background: linear-gradient(
+    90deg,
+    var(--apricot) 0%,
+    #E6972E 35%,
+    #111 80%,
+    #000 100%
+  );
+}
