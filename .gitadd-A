@@ -1,0 +1,3 @@
+git add -A
+git commit -m "reset: Next starter ki toujou bati (Node 22)"
+git push
