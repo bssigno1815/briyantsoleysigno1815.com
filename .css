@@ -1,4 +1,8 @@
-/* chwazi vrè apricot ou: */
+body{ background:#000; } /* rès paj la rete nwa */
+.hero{
+  min-height: 320px; /* oswa wotè ou vle */
+  background: linear-gradient(90deg, var(--apricot) 0%, #E6972E 40%, #000 100%);
+}/* chwazi vrè apricot ou: */
 :root { --apricot: #FBCEB1; /* oswa #F6B26B / #F4A261 */ }
 
 .header-hero{
