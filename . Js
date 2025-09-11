@@ -1,4 +1,7 @@
-
+// pages/index.js  (or app/page.js if you use App Router—pick ONE router)
+export default function Home() {
+  return <main style={{padding:32,fontFamily:'system-ui'}}><h1>BRIYANT SOLÈY SIGNO 1815</h1></main>;
+}
 // pages/index.js  (or app/page.js if you use App Router—pick ONE router)
 export default function Home() {
   return <main style={{padding:32,fontFamily:'system-ui'}}><h1>BRIYANT SOLÈY SIGNO 1815</h1></main>;
