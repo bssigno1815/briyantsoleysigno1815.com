@@ -1,30 +1,16 @@
 {
-  "name": "bss-site",
-  "version": "1.0.0",
+  "name": "briyantsoleysigno1815",
   "private": true,
-  "engines": { "node": "22.x" },
+  "type": "module",
+  "engines": { "node": "20.x" },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 3000"
   },
   "dependencies": {
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1"
-  }
-}{
-  "name": "bss",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "engines": { "node": "18.x" },
-  "dependencies": {
-    "next": "14.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
   }
 }
