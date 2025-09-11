@@ -1,30 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: { ignoreDuringBuilds: true },
-  typescript: { ignoreBuildErrors: true }
-};
 
-module.exports = nextConfig;
+// pages/index.js  (or app/page.js if you use App Router—pick ONE router)
 export default function Home() {
-  return (
-    <main
-      style={{
-        minHeight: '70vh',
-        display: 'grid',
-        placeItems: 'center',
-        background: '#000',
-        color: '#F4A261',
-        textAlign: 'center',
-        padding: '3rem'
-      }}
-    >
-      <h1 style={{ marginBottom: 8 }}>Briyant Solèy Signo 1815</h1>
-      <p>Premye deploy ki pase ✅ — Node 22 + Next 14</p>
-      <img
-        src="/bss-logo.png"
-        alt="BSS Logo"
-        style={{ width: 160, height: 'auto', marginTop: 20 }}
-      />
-    </main>
-  );
+  return <main style={{padding:32,fontFamily:'system-ui'}}><h1>BRIYANT SOLÈY SIGNO 1815</h1></main>;
 }
