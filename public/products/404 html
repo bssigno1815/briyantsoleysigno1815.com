@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briyant Solèy Signo 1815</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #000, #ffb347);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Byenveni sou sit ofisyèl BSS</h1>
+    <p><strong>Briyant Solèy Signo 1815</strong></p>
+    <p>Slogan: Yon motè nèf, yon sèl kout kle san bri 🚀</p>
+  </div>
+</body>
+</html>
