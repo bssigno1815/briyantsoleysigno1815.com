@@ -1,4 +1,14 @@
-// pages/index.js  (or app/page.js if you use App Router—pick ONE router)
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  // itil si w ap sèvi ak image nan /public
+  images: {
+    unoptimized: true,
+  },
+  // bon pou Vercel prod
+  output: 'standalone',
+};
+module.exports = nextConfig;// pages/index.js  (or app/page.js if you use App Router—pick ONE router)
 export default function Home() {
   return <main style={{padding:32,fontFamily:'system-ui'}}><h1>BRIYANT SOLÈY SIGNO 1815</h1></main>;
 }
