@@ -1,0 +1,3 @@
+git add .
+git commit -m "Add gradient background to homepage"
+git push origin main
