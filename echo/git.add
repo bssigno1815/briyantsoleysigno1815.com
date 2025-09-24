@@ -1,0 +1,4 @@
+echo >> README.md
+git add README.md
+git commit -m "chore: trigger deploy"
+git push origin main
