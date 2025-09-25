@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Paj Pa Jwenn | Briyant Solèy Signo 1815</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .error-code {
+      font-size: 6rem;
+      font-weight: bold;
+      color: #ff7f00;
+    }
+    .error-message {
+      font-size: 1.5rem;
+      margin: 10px 0 20px 0;
+      color: #ffffff;
+    }
+    .back-home {
+      background: #ff7f00;
+      color: #000000;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .back-home:hover {
+      background: #000000;
+      color: #ff7f00;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <img src="logo.png" alt="BSS Logo" width="120">
+    <div class="error-code">404</div>
+    <div class="error-message">Paj ou chèche a pa egziste 🚫</div>
+    <a class="back-home" href="index.html">Retounen sou Akèy</a>
+  </div>
+</body>
+</html>
