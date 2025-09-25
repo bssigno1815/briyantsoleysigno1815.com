@@ -1,4 +1,11 @@
+/* Global Background Gradient */
 body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #ff7f00);
+  color: white;
+}body {
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(to bottom, #000000, #ff7f00);
