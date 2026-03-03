@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BSS 1815 – Verification (TI RAT)</title>
+<style>
+  body{margin:0;background:#000;font-family:Arial,Helvetica,sans-serif;color:#ff9f1c}
+  .wrap{max-width:560px;margin:30px auto;padding:18px}
+  .card{border:3px solid #ff9f1c;border-radius:16px;background:#050505;padding:24px;text-align:center}
+  .photo{width:170px;height:170px;border-radius:50%;object-fit:cover;border:3px solid #ff9f1c;margin:10px auto 18px;display:block}
+  h1{margin:0 0 6px;font-size:26px}
+  h2{margin:0 0 18px;font-size:14px;color:#fff;letter-spacing:.08em}
+  .row{margin:14px 0;text-align:left}
+  .label{font-size:12px;color:#cfcfcf;letter-spacing:.10em}
+  .value{margin-top:4px;font-size:18px;font-weight:900;color:#ff9f1c}
+  .status{margin-top:18px;padding:14px;border-radius:14px;background:#0f3326;border:2px solid #00ff99;color:#00ff99;font-weight:900;font-size:18px;text-align:center}
+  .footer{margin-top:20px;font-size:12px;color:#cfcfcf;line-height:1.5}
+  .small{color:#fff;font-weight:700}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>BSS 1815</h1>
+      <h2>LIVE BADGE VERIFICATION</h2>
+
+      <img class="photo" src="ti-rat.jpg" alt="TI RAT"/>
+
+      <div class="row"><div class="label">NAME</div><div class="value">TI RAT</div></div>
+      <div class="row"><div class="label">ROLE</div><div class="value">PDG</div></div>
+      <div class="row"><div class="label">BADGE ID</div><div class="value">BSS-PDG-001</div></div>
+      <div class="row"><div class="label">ACCESS LEVEL</div><div class="value">FULL ACCESS</div></div>
+      <div class="row"><div class="label">EXPIRATION</div><div class="value">INDEFINITE</div></div>
+
+      <div class="status">✅ STATUS: VALID – ACCESS GRANTED</div>
+
+      <div class="footer">
+        Authorized by <span class="small">BSS ADMINISTRATION</span><br/>
+        Briyant Solèy Signo 1815 • Official Verification Page
+      </div>
+    </div>
+  </div>
+</body>
+</html>
