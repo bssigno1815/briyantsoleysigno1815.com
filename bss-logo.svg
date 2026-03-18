@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0b"/>
+      <stop offset="100%" stop-color="#ff8a2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect x="70" y="70" width="1060" height="660" rx="36" fill="rgba(0,0,0,0.55)" stroke="#ff8a2a" stroke-width="3"/>
+  <text x="110" y="210" fill="white" font-size="64" font-family="Arial Black, Arial" letter-spacing="1">BSS 1815</text>
+  <text x="110" y="290" fill="white" font-size="34" font-family="Arial" opacity="0.9">BRIYANT SOLÈY SIGNÒ 1815 • Yon motè nèf, yon sèl kout kle san bri.</text>
+  <text x="110" y="680" fill="white" font-size="22" font-family="Arial" opacity="0.75">Replace this image with your real photo/logo</text>
+</svg>
