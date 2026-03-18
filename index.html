@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briyant Soley Signo 1815</title>
 
-  <!-- FAVICON (retire si ou pa gen li) -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- SEO -->
+  <!-- SEO TAGS -->
   <meta name="description" content="Briyant Soley Signo 1815 — Official platform representing unity, culture, discipline, and brilliance.">
-  <meta name="keywords" content="BSS 1815, Briyant Soley Signo, Haiti, culture, movement">
+  <meta name="keywords" content="BSS 1815, Briyant Soley Signo, culture, movement, Haiti, identity">
   <meta name="author" content="BSS 1815">
 
-  <!-- SOCIAL PREVIEW -->
+  <!-- SOCIAL MEDIA PREVIEW -->
   <meta property="og:title" content="Briyant Soley Signo 1815">
   <meta property="og:description" content="Official digital home of BSS 1815 — unity, culture, brilliance.">
   <meta property="og:image" content="bss-1815.png">
@@ -60,9 +60,13 @@
       transition: 0.3s;
     }
 
-    nav a:hover { color: #ffd3a7; }
+    nav a:hover {
+      color: #ffd3a7;
+    }
 
-    .logo-small { height: 40px; }
+    .logo-small {
+      height: 40px;
+    }
 
     /* HERO */
     header {
@@ -88,12 +92,14 @@
       box-shadow: 0 20px 50px rgba(0,0,0,0.35);
       backdrop-filter: blur(8px);
       width: 100%;
+      animation: fadeIn 1.2s ease;
     }
 
     .logo-img {
       width: 150px;
       margin: 0 auto 20px;
       display: block;
+      animation: fadeIn 1.5s ease;
     }
 
     h1 {
@@ -153,7 +159,10 @@
       background: rgba(244,164,96,0.12);
     }
 
-    section { padding: 70px 0; }
+    section {
+      padding: 70px 0;
+      animation: fadeIn 1.2s ease;
+    }
 
     .section-title {
       font-size: 2rem;
@@ -182,18 +191,17 @@
       border-radius: 18px;
       padding: 24px;
       box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
     }
 
     .card h3 {
       color: #f4a460;
       margin-bottom: 10px;
-    }
-
-    .contact { margin-top: 20px; text-align: center; }
-
-    .contact a {
-      color: #ffd3a7;
-      text-decoration: none;
     }
 
     footer {
@@ -208,6 +216,12 @@
       background: linear-gradient(to right, transparent, rgba(244,164,96,0.6), transparent);
       margin: 10px auto 0;
       max-width: 860px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -255,27 +269,67 @@
     <section id="about">
       <h2 class="section-title">About Us</h2>
       <p class="section-text">
-        Briyant Soley Signo 1815 represents energy, culture, loyalty, and vision.
+        Briyant Soley Signo 1815 represents energy, culture, loyalty, and vision. This platform is being built to share our identity, our people, our media, and our mission with the world.
       </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>To shine with discipline, unity, and originality while keeping our community connected everywhere.</p>
+        </div>
+
+        <div class="card">
+          <h3>Our Colors</h3>
+          <p>Black and apricot orange represent strength, brilliance, and bold identity.</p>
+        </div>
+
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>To preserve our image, honor our members, and create a modern digital home for BSS 1815.</p>
+        </div>
+      </div>
     </section>
 
     <!-- FEATURES -->
     <section id="features">
       <h2 class="section-title">What’s Coming</h2>
       <p class="section-text">
-        Leadership profiles, gallery, store, and official media sections coming soon.
+        This is the new clean launch version of the site. More official sections can be added step by step.
       </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Leadership</h3>
+          <p>Profiles for official leadership and honored members.</p>
+        </div>
+
+        <div class="card">
+          <h3>Gallery</h3>
+          <p>Fan photos, event memories, and visual media from BSS.</p>
+        </div>
+
+        <div class="card">
+          <h3>Store</h3>
+          <p>Official merchandise including shirts, flags, and accessories.</p>
+        </div>
+
+        <div class="card">
+          <h3>Contact</h3>
+          <p>A direct way for supporters and members to reach the organization.</p>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
       <h2 class="section-title">Contact</h2>
+      <p class="section-text">
+        For official information, partnership requests, or updates, contact the BSS team.
+      </p>
 
       <div class="contact">
         <p>Email: <a href="mailto:briyantsigno@gmail.com">briyantsigno@gmail.com</a></p>
-        <p style="margin-top:8px;">
-          Website: <a href="https://briyantsoleysigno1815.com">briyantsoleysigno1815.com</a>
-        </p>
+        <p style="margin-top:8px;">Website: <a href="https://briyantsoleysigno1815.com">briyantsoleysigno1815.com</a></p>
       </div>
     </section>
   </div>
